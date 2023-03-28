@@ -26,12 +26,11 @@
       <td>{{$customer->firstName}}</td>
       <td>{{$customer->email}}</td>
       <td>{{$customer->address}}</td>
-      <td><a href="#"class="btn btn-primary">Edit</a></td>
+      <td><a href="edit/{{$customer->id}}"class="btn btn-primary">Edit</a></td>
       <td><a href="delete/{{$customer->id}}" class="btn btn-danger">Delete</a></td>
     </tr>
   </tbody>
   @endforeach
 </table>
-
 
 @include('partials.footer')
